@@ -1,0 +1,356 @@
+/*********/
+/* FONTS */
+/*********/
+@import url("https://use.typekit.net/nby8jqs.css");
+/* 400 is normal, 700 is bold, italic is available*/
+
+
+
+
+
+/*************/
+/* VARIABLES */
+/*************/
+:root {
+    --bg-color: hsl(60, 20%, 98%);
+    --text-color: hsl(0, 0%, 1%);
+    --accent-color: hsl(354, 62%, 50%);
+    --font: "futura-pt", Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif; /*https://modernfontstacks.com/*/
+    --fold: 35;
+}
+
+
+
+/*********/
+/* RESET */
+/*********/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+	text-decoration: none;
+    z-index: 1;
+}
+
+button:not[disabled], summary {
+	cursor: pointer;
+}
+
+
+
+/***********/
+/* GENERAL */
+/***********/
+
+body {
+    font-family: var(--font);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+header {
+    width: 100vw;
+    height: 105vh;
+}
+
+section {
+    padding: 2em 0em;
+    height: auto;
+    padding-bottom: 2em;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    max-width: 20rem;
+    width: 100%;
+}
+
+header, section {
+    border-bottom: 0.1em;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: var(--accent-color);
+    border-style: solid;
+}
+
+h1 {
+    font-size: clamp(3rem,5vw,5rem);
+    margin: 0;
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+h2 {
+    color: var(--accent-color);
+}
+
+h3 {
+    font-weight: 500;
+    margin: 0;
+    color: var(--accent-color);
+}
+
+img {
+    max-width: 30vw;
+    margin-top: 2em;
+}
+
+.big {
+    max-width: 60vw;
+
+}
+
+section p {
+    margin-bottom: 1em;
+}
+
+p {
+    font-weight: 400;
+}
+
+a {
+    color: var(--bg-color);
+    transition:  0.1s;
+}
+
+a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+b {
+    font-weight: 500;
+}
+
+.desc {
+    font-size: clamp(0.7rem, 1.5vw, 1rem);
+    margin-bottom: 3em;
+}
+
+
+
+/***********/
+/*  HEADER */
+/***********/
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header p {
+    margin: 0;
+}
+
+
+
+/**********/
+/* WAAROM */
+/**********/
+main section:nth-of-type(1) {
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+
+
+/****************/
+/* GESCHIEDENIS */
+/****************/
+main section:nth-of-type(2) {
+    height: auto;
+    position: relative;
+}
+
+main section:nth-of-type(2) img {
+    margin: 0.2em;
+}
+
+.img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2em;
+}
+
+.img div {
+    display: flex;
+    flex-direction: column;
+}
+
+/*************/
+/* UITERLIJK */
+/*************/
+section:nth-of-type(3) img {
+    margin-top: 1em;
+}
+
+
+
+/***************/
+/* LETTERPROEF */
+/***************/
+main section:nth-of-type(4) {
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+}
+
+main section:nth-of-type(4) div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+main section:nth-of-type(4) div p {
+    margin: 0;
+    width: 200vw;
+    position: relative;
+    transform: rotate(-30deg);
+}
+
+.line2 {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    margin-bottom: 1em !important;
+}
+
+
+
+/***********/
+/* STIJLEN */
+/***********/
+
+section:nth-of-type(5) div {
+    margin-bottom: 1.5em;
+}
+
+section:nth-of-type(5) div p {
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    margin: 0.2em;
+}
+
+/* Makes the right divs the right weights */
+section:nth-of-type(5) div:nth-of-type(1) p {
+    font-weight: 300;
+}
+
+section:nth-of-type(5) div:nth-of-type(2) p {
+    font-weight: 400;
+}
+
+section:nth-of-type(5) div:nth-of-type(3) p {
+    font-weight: 500;
+}
+
+section:nth-of-type(5) div:nth-of-type(4) p {
+    font-weight: 600;
+}
+
+section:nth-of-type(5) div:nth-of-type(5) p {
+    font-weight: 700;
+}
+
+section:nth-of-type(5) div:nth-of-type(6) p {
+    font-weight: 800;
+}
+
+
+/* Makes the right sentences italic */
+section:nth-of-type(5) div p:nth-of-type(2) {
+    font-style: italic;
+}
+
+
+/**********/
+/* TRY-ME */
+/**********/
+section:nth-of-type(6) {
+    border-bottom: 0;
+}
+
+section:nth-of-type(6) textarea {
+    font-family: "futura-pt";
+    height: 5em;
+    width: 100%;
+    margin-top: 0.5em;
+    font-size: clamp(2rem,4vw,2.5rem);
+    border-color: var(--accent-color);
+    border-style: solid;
+    border-width: 0.02em;
+}
+
+/**********/
+/* FOOTER */
+/**********/
+footer {
+    background-color: var(--accent-color);
+    padding: 1em;
+    text-align: center;
+    color: var(--bg-color);
+    height: auto;
+}
+
+
+
+
+/*************/
+/* ANIMATIES */
+/*************/
+@keyframes fadeIn {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1; 
+    }
+    100% {
+        opacity: 0.5;
+}
+}
+
+
+
+/******************/
+/* RESPONSIVENESS */
+/******************/
+@media (min-width: 37.5em), (min-width:80em) {
+    article {
+        max-width: calc(var(--fold) * 1rem);
+    }
+    
+    header,
+    section {
+        overflow: hidden;
+    }
+
+    .big {
+        max-width: calc(var(--fold) * 1rem);
+    }
+
+    .wrap div {
+        float: right;
+        margin-left: 1.5em;
+    }
+
+    .wrap p {
+        flex: 2;
+    }
+}
