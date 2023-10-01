@@ -1,7 +1,9 @@
-Bronnen
-Bij het coderen heb ik enkele bronnen gebruikt, deze zijn bij de stukjes code zelf te vinden, maar ook hieronder.
+# Bronnen
+## Algemeen
+- Futura: https://fonts.adobe.com/fonts/futura-pt 
+- Fallbacks: https://modernfontstacks.com/
 
-Futura font bron: https://fonts.adobe.com/fonts/futura-pt 
-Fallbacks bron: https://modernfontstacks.com/
-
-Mijn inspiratie voor deze opdracht waren oude 
+## Javascript
+- https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/clientX
+- https://developer.mozilla.org/en-US/docs/Web/API/Window/innerWidth 
+- https://www.w3schools.com/jsref/prop_html_style.asp 
